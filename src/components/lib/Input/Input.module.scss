@@ -1,0 +1,14 @@
+.input {
+  width: 100%;
+  border: 1px solid #a4a4a4;
+  border-radius: 0.2rem;
+  outline-color: #ff4700;
+  padding: 0.8rem;
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+
+  &::placeholder {
+    color: #8492a6;
+  }
+}
