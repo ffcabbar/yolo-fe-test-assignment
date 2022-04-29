@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(50deg, gray 1%, rgba(251, 247, 252, 0) 100%);
+  border-image-slice: 1;
+  padding-bottom: 0.7rem;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.2, 0.8, 0.4, 1);
+  margin-bottom: 1.5rem;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  .leftSection {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .price {
+    color: white;
+    display: grid;
+    gap: 0.3rem;
+
+    div {
+      &:first-child {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+      &:last-child {
+        font-size: 1rem;
+        color: gray;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .delete {
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+}
