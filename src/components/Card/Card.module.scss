@@ -1,0 +1,16 @@
+.wrapper {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 0.2rem;
+
+  div {
+    &:nth-child(2) {
+      margin-top: 1rem;
+    }
+    &:nth-child(3) {
+      margin-top: 3rem;
+      text-align: center;
+      color: #a4a4a4;
+    }
+  }
+}
