@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 14rem 2rem 14rem;
+  color: #a4a4a4;
+
+  @media (min-width: 1920px) {
+    padding: 4rem 20rem 2rem 20rem;
+  }
+
+  @media (max-width: 1400px) {
+    padding: 2rem 4rem 2rem 4rem;
+  }
+
+  @media (max-width: 900px) {
+    padding: 1rem;
+  }
+}
