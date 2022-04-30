@@ -1,3 +1,73 @@
-.App {
-  text-align: center;
+.main {
+  background: #300052;
+
+  width: 100%;
+  // background-image: url('../public/bg.png'), url('../public/figure.png');
+  // background-position: top right, center;
+  // background-repeat: no-repeat, no-repeat;
+  // background-size: 40% 70%, 50% 50%;
+}
+
+.figure {
+  background-image: url('../public/figure.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 85%;
+  width: 40%;
+  transform: scale(0.7);
+  top: 10%;
+  left: 30%;
+}
+.bg {
+  background-image: url('../public/bg.png');
+  background-position: 0% 70%;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 85%;
+  width: 30%;
+  right: 0;
+}
+
+.container {
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 1rem;
+
+  @media (min-width: 600px) {
+    padding: 2rem;
+  }
+}
+
+.innerSection {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  .descriptionSection {
+    h1 {
+      width: 63%;
+      font-size: 3rem;
+      font-weight: 500;
+      color: white;
+      margin: 0;
+      margin-top: 4rem;
+    }
+    h2 {
+      width: 34%;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: gray;
+      margin: 0;
+      margin-top: 1rem;
+    }
+  }
+}
+.coinListSection {
+  margin-top: 4rem;
 }
