@@ -11,7 +11,9 @@ export const Card = () => {
       <div>
         <Button>Add</Button>
       </div>
-      <div>Use of this service is subject to terms and conditions.</div>
+      <div>
+        <div>Use of this service is subject to terms and conditions.</div>
+      </div>
     </div>
   );
 };

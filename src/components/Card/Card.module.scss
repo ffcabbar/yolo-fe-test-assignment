@@ -1,7 +1,25 @@
 .wrapper {
   background: white;
-  padding: 2rem 3rem;
+  padding: 2.5rem 3rem 2.5rem;
   border-radius: 0.2rem;
+
+  @media (max-width: 1400px) {
+    padding: 2rem 2.5rem 2rem;
+  }
+
+  @media (max-width: 980px) {
+    padding: 1rem 1.5rem 1rem;
+  }
+
+  @media (min-width: 1400px) {
+    div {
+      &:nth-child(3) {
+        div {
+          width: 85%;
+        }
+      }
+    }
+  }
 
   div {
     &:nth-child(2) {
@@ -11,6 +29,8 @@
       margin-top: 3rem;
       text-align: center;
       color: #a4a4a4;
+      display: flex;
+      justify-content: center;
     }
   }
 }
