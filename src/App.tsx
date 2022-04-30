@@ -1,12 +1,10 @@
 import styles from './App.module.scss';
-import { Card, CoinList, Header } from './components';
+import { Card, CoinList, Footer, Header } from './components';
 
 const App = () => {
   return (
     <div>
       <main className={styles.main}>
-        {/* <div className={styles.figure}></div> */}
-        {/* <div className={styles.bg}></div> */}
         <div className={styles.container}>
           <Header />
           <div className={styles.innerSection}>
@@ -23,11 +21,7 @@ const App = () => {
           </div>
         </div>
       </main>
-      {/* <div className={styles.footer}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore necessitatibus in quas,
-        similique, porro, earum sequi ullam quasi numquam molestias illum provident cum odit cumque
-        illo nisi sapiente consectetur iure.
-      </div> */}
+      <Footer />
     </div>
   );
 };

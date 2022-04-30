@@ -1,43 +1,27 @@
 .main {
-  background: #300052;
-
+  background: #280044;
+  min-height: 70rem;
   width: 100%;
-  // background-image: url('../public/bg.png'), url('../public/figure.png');
-  // background-position: top right, center;
-  // background-repeat: no-repeat, no-repeat;
-  // background-size: 40% 70%, 50% 50%;
-}
+  background-image: url('../public/figure.png'), url('../public/bg.png');
+  background-position: bottom, top 0rem right -48rem;
+  background-repeat: no-repeat;
+  background-size: 50rem, 90rem 100%;
 
-.figure {
-  background-image: url('../public/figure.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
-  height: 85%;
-  width: 40%;
-  transform: scale(0.7);
-  top: 10%;
-  left: 30%;
-}
-.bg {
-  background-image: url('../public/bg.png');
-  background-position: 0% 70%;
-  background-repeat: no-repeat;
-  position: absolute;
-  height: 85%;
-  width: 30%;
-  right: 0;
+  @media (max-width: 1300px) {
+    background-image: none, url('../public/bg.png');
+  }
 }
 
 .container {
-  @media (min-width: 1200px) {
-    max-width: 1200px;
+  @media (min-width: 1800px) {
+    max-width: 1800px;
   }
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   display: block;
   padding: 1rem;
+  position: relative;
 
   @media (min-width: 600px) {
     padding: 2rem;
@@ -51,7 +35,7 @@
 
   .descriptionSection {
     h1 {
-      width: 63%;
+      width: 53%;
       font-size: 3rem;
       font-weight: 500;
       color: white;
