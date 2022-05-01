@@ -3,13 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const client = new ApolloClient({
+  uri: 'https://api.blocktap.io/graphql',
+  cache: new InMemoryCache(),
+  headers: {
+    authorization: 'Bearer 5018c8c8fd87268c60414d421f3c77e1175d5e387ab9281e00e1db0c04ee69f9'
+  }
+});
+
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
-    <App />
+    <ApolloProvider client={client}>
+      <App />
+    </ApolloProvider>
   </React.StrictMode>
 );
 
