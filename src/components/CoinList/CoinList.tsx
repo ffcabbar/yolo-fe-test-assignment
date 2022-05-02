@@ -17,6 +17,7 @@ export const CoinList = ({ loading, coins, setCoins }: Props) => {
   const deleteCoin = (id: string) => {
     const filteredCoins = coins.filter((c) => c.id !== id);
     setCoins(filteredCoins);
+    localStorage.setItem('coinsInfo', JSON.stringify(filteredCoins));
   };
 
   return (

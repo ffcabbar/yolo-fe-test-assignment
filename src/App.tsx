@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './App.module.scss';
 import { Card, CoinList, Footer, Header } from './components';
 import { useLazyQuery } from '@apollo/client';
@@ -15,6 +15,7 @@ const App = () => {
       const hasSameCoin = coins.some((f) => f.id === data.markets[0]?.id);
       if (data.markets.length && !hasSameCoin) {
         setCoins([...coins, data.markets[0]]);
+        localStorage.setItem('coinsInfo', JSON.stringify([...coins, data.markets[0]]));
       } else if (data.markets.length <= 0) {
         alert('coin not found');
       }
@@ -23,6 +24,13 @@ const App = () => {
       }
     }
   });
+
+  useEffect(() => {
+    const coins = localStorage.getItem('coinsInfo');
+    if (coins) {
+      setCoins(JSON.parse(coins));
+    }
+  }, []);
 
   return (
     <div>
