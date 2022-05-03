@@ -64,3 +64,12 @@
     margin-right: 1rem;
   }
 }
+
+.loading {
+  display: flex;
+  justify-content: flex-start;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}

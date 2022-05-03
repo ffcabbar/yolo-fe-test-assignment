@@ -2,6 +2,7 @@ import styles from './CoinList.module.scss';
 import deleteIcon from '../../deleteIcon.svg';
 import icon from '../../icon.svg';
 import { ICoin } from '../../common/types';
+import { Loader } from '../Loader/Loader';
 
 type Props = {
   loading: boolean;
@@ -11,7 +12,11 @@ type Props = {
 
 export const CoinList = ({ loading, coins, setCoins }: Props) => {
   if (loading) {
-    return <>Loading...</>;
+    return (
+      <div className={styles.loading}>
+        <Loader />
+      </div>
+    );
   }
 
   const deleteCoin = (id: string) => {
