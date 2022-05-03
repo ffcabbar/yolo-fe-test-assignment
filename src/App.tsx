@@ -7,7 +7,7 @@ const App = () => {
   const { coins, setCoins, getData, loading, error } = useLazyFetchCoin();
 
   if (error) {
-    return <>Something went wrong!</>;
+    return <>Something went wrong! {error}</>;
   }
 
   return (
