@@ -1,3 +1,4 @@
+import { ToastContainer } from 'react-toastify';
 import styles from './App.module.scss';
 import { Card, CoinList, Footer, Header } from './components';
 import { useLazyFetchCoin } from './hooks/useLazyFetchCoin';
@@ -11,6 +12,7 @@ const App = () => {
 
   return (
     <div>
+      <ToastContainer />
       <main className={styles.main}>
         <div className={styles.container}>
           <Header />

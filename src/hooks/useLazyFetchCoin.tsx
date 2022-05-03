@@ -2,6 +2,8 @@ import { useLazyQuery } from '@apollo/client';
 import { useEffect, useState } from 'react';
 import { ICoin } from '../common/types';
 import { GET_COIN_PRICE_QUERY } from '../graphql/Queries';
+import { alertNotification } from '../helpers/alert-notification';
+import { Notification } from '../common/enums';
 
 export const useLazyFetchCoin = () => {
   const [coins, setCoins] = useState<ICoin[]>([]);
@@ -19,13 +21,14 @@ export const useLazyFetchCoin = () => {
     onCompleted: (data) => {
       const hasSameCoin = coins.some((f) => f.id === data.markets[0]?.id);
       if (data.markets.length && !hasSameCoin) {
-        setCoins([...coins, data.markets[0]]);
-        localStorage.setItem('coinsInfo', JSON.stringify([...coins, data.markets[0]]));
+        const allCoins = [...coins, data.markets[0]];
+        setCoins(allCoins);
+        localStorage.setItem('coinsInfo', JSON.stringify(allCoins));
       } else if (data.markets.length <= 0) {
-        alert('coin not found');
+        alertNotification('Coin not found !', Notification.ERROR);
       }
       if (hasSameCoin) {
-        alert('has same value');
+        alertNotification('This coin already exists on your list !', Notification.WARNING);
       }
     }
   });

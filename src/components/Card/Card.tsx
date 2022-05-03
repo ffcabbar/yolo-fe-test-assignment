@@ -1,5 +1,7 @@
 import { LazyQueryExecFunction, OperationVariables } from '@apollo/client';
 import { useState } from 'react';
+import { alertNotification } from '../../helpers/alert-notification';
+import { Notification } from '../../common/enums';
 import { Button } from '../lib/Button/Button';
 import { Input } from '../lib/Input/Input';
 import styles from './Card.module.scss';
@@ -22,7 +24,7 @@ export const Card = ({ getData }: Props) => {
         variables: { code }
       });
     } else {
-      alert('enter a code please');
+      alertNotification('Please enter a code !', Notification.WARNING);
     }
   };
 
