@@ -34,13 +34,18 @@ const mocks = [
   }
 ];
 
-it('runs the mocked query', () => {
+const setup = () => {
   render(
     <MockedProvider mocks={mocks}>
       <App />
     </MockedProvider>
   );
+};
 
-  const titleElement = screen.getByText(/Now you can track all your cryptos here!/i);
-  expect(titleElement).toBeInTheDocument();
+describe('test apps entry point', () => {
+  it('runs the mocked query', () => {
+    setup();
+    const titleElement = screen.getByText(/Now you can track all your cryptos here!/i);
+    expect(titleElement).toBeInTheDocument();
+  });
 });
