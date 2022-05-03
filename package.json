@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.6.1",
+    "@apollo/react-testing": "^4.0.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
@@ -51,6 +52,7 @@
   "devDependencies": {
     "@types/react-test-renderer": "^18.0.0",
     "husky": "^7.0.4",
+    "jest-canvas-mock": "^2.4.0",
     "lint-staged": "^12.4.1",
     "prettier": "2.6.2"
   },
