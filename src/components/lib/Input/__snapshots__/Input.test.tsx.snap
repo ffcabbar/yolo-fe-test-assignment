@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div>
+  <input
+    className="input"
+    placeholder="BTC"
+    role="searchbox"
+  />
+</div>
+`;
+
+exports[`matches snapshot correctly when there are no props 1`] = `
+<div>
+  <input
+    className="input"
+    role="searchbox"
+  />
+</div>
+`;

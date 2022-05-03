@@ -1,6 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { useState } from 'react';
 import { Input } from './Input';
+import renderer from 'react-test-renderer';
 
 function TestInput() {
   const [value, setValue] = useState('');
@@ -31,4 +32,14 @@ test('renders input', () => {
   render(<Input />);
   const inputElement = screen.getByRole('searchbox');
   expect(inputElement).toBeInTheDocument();
+});
+
+test('matches snapshot', () => {
+  const tree = renderer.create(<Input placeholder="BTC" />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+test('matches snapshot correctly when there are no props', () => {
+  const tree = renderer.create(<Input />).toJSON();
+  expect(tree).toMatchSnapshot();
 });
