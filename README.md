@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+![pic](https://media-exp1.licdn.com/dms/image/C560BAQF9gwkcMUK9HQ/company-logo_200_200/0/1648126577152?e=2147483647&v=beta&t=mCzuvYIhYHG-YDuzfJzt88z0lUcSCAbNB82q4xum4F4)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# yolo-fe-test-assignment
 
-## Available Scripts
+### [🚀 See the app in action 🚀]()
 
-In the project directory, you can run:
+![gif]()
 
-### `npm start`
+## Resources that I use for the project
+- https://www.apollographql.com/docs/react/development-testing/testing/
+- https://github.com/apollographql/react-apollo/issues/3709
+- https://robertmarshall.dev/blog/react-jest-tests-failing-using-lottie-js-solved/
+- https://medium.com/@galen.corey/understanding-apollo-fetch-policies-705b5ad71980
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Encountered problems that I was shared on https://stackoverflow.com/
+- https://stackoverflow.com/questions/72081201/uselazyquery-oncompleted-function-is-not-being-called
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Develop
 
-### `npm test`
+> You'll need [Node](https://nodejs.org/en/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- run `yarn` or `npm i` to install dependencies
+- run `yarn run start `or `npm run start` to start development environment
 
-### `npm run build`
+## Build
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- run `yarn` or `npm i` to install dependencies
+- run `yarn build` or `npm run build` to build app for production
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Test
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- run `yarn` or `npm i` to install dependencies
+- run `yarn test` or `npm run test` to test app
 
-### `npm run eject`
+## e2e Test
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- run `yarn` or `npm i` to install dependencies
+- run `yarn e2e-test` or `npm run e2e-test` to test app
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Data
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+All data is fetched from this graphql API
+[blocktap.io](https://api.blocktap.io/graphiql).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Technologies
 
-## Learn More
+> This project was built with
+> [Create React App](https://github.com/facebook/create-react-app). You can
+> learn more in the
+> [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [React](https://reactjs.org/) - UI library
+- [GraphQL](https://graphql.org/) - GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data
+- [Apollo GraphQL](https://www.apollographql.com/docs/react) - The Apollo Graph Platform unifies GraphQL across your apps and services
+- [sass](https://sass-lang.com/) - Sass is the most mature, stable, and powerful professional grade CSS extension language in the world
+- [react-toastify](https://fkhadra.github.io/react-toastify/introduction/) - 🎉 React-Toastify allows you to add notifications to your app with ease.
+- [husky](https://typicode.github.io/husky/#/) - Modern native git hooks made easy
+- [lint-staged](https://github.com/okonet/lint-staged) - Run linters against staged git files and don't let 💩 slip into your code base!
+- [cypress](https://www.cypress.io/) - Fast, easy and reliable testing for anything that runs in a browser
+- [react-testing-library](https://testing-library.com/docs/react-testing-library/intro/) - Simple and complete testing utilities that encourage good testing practices
+- [react-test-renderer](https://reactjs.org/docs/test-renderer.html) - This package provides an experimental React renderer that can be used to render React components to pure JavaScript objects
