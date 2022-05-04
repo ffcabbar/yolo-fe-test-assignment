@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CoinList component matches snapshot correctly when there is a request 1`] = `
+<div
+  className="wrapper"
+  data-testid="coin-list-binance_bnb_eur"
+>
+  <div
+    className="leftSection"
+  >
+    <div>
+      <img
+        alt="icon"
+        src="icon.svg"
+      />
+    </div>
+    <div
+      className="price"
+    >
+      <div>
+        BNB
+      </div>
+      <div>
+        414.9000
+         €
+      </div>
+    </div>
+  </div>
+  <div
+    className="delete"
+    data-testid="coin-list-delete-binance_bnb_eur"
+    onClick={[Function]}
+  >
+    <img
+      alt="deleteIcon"
+      src="deleteIcon.svg"
+    />
+  </div>
+</div>
+`;
+
+exports[`CoinList component matches snapshot correctly when there is no request 1`] = `null`;
