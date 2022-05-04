@@ -29,7 +29,11 @@ export const CoinList = ({ loading, coins, setCoins }: Props) => {
     <>
       {coins.map((coin, idx) => {
         return (
-          <div className={styles.wrapper} key={`${coin.id}_${idx}`}>
+          <div
+            className={styles.wrapper}
+            key={`${coin.id}_${idx}`}
+            data-testid={`coin-list-${coin.id}`}
+          >
             <div className={styles.leftSection}>
               <div>
                 <img src={icon} alt="icon" />
@@ -39,7 +43,7 @@ export const CoinList = ({ loading, coins, setCoins }: Props) => {
                 <div>{coin.ticker.lastPrice.substring(0, 8)} &euro;</div>
               </div>
             </div>
-            <div className={styles.delete} onClick={() => deleteCoin(coin.id)}>
+            <div className={styles.delete} onClick={() => deleteCoin(coin.id)} data-testid={`coin-list-delete-${coin.id}`}>
               <img src={deleteIcon} alt="deleteIcon" />
             </div>
           </div>

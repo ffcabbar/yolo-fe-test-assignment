@@ -12,8 +12,8 @@ const App = () => {
 
   return (
     <div>
-      <ToastContainer />
-      <main className={styles.main}>
+      <ToastContainer containerId="alert" />
+      <main className={styles.main} data-testid="main">
         <div className={styles.container}>
           <Header />
           <div className={styles.innerSection}>
@@ -25,7 +25,7 @@ const App = () => {
               <Card getData={getData} />
             </div>
           </div>
-          <div className={styles.coinListSection}>
+          <div className={styles.coinListSection} data-testid="coin-list-container">
             <CoinList loading={loading} coins={coins} setCoins={setCoins} />
           </div>
         </div>

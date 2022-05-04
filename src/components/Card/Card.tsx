@@ -29,12 +29,14 @@ export const Card = ({ getData }: Props) => {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} data-testid="card">
       <div>
-        <Input placeholder="BTC" value={code} onChange={handleChange} />
+        <Input placeholder="BTC" value={code} onChange={handleChange} data-testid="search-box" />
       </div>
       <div>
-        <Button onClick={onClick}>Add</Button>
+        <Button onClick={onClick} data-testid="button">
+          Add
+        </Button>
       </div>
       <div>
         <div>Use of this service is subject to terms and conditions.</div>

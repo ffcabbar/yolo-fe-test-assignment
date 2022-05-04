@@ -2,7 +2,7 @@ import styles from './Footer.module.scss';
 
 export const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} data-testid="footer">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore necessitatibus in quas,
       similique, porro, earum sequi ullam quasi numquam molestias illum provident cum odit cumque
       illo nisi sapiente consectetur iure. Lorem ipsum dolor sit amet consectetur adipisicing elit.
