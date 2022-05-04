@@ -2,7 +2,7 @@
 
 # yolo-fe-test-assignment
 
-### [🚀 See the app in action 🚀]()
+### [🚀 See the app in action 🚀](https://yolo-fe-test.netlify.app)
 
 ![gif]()
 
