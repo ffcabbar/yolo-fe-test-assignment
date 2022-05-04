@@ -4,7 +4,7 @@
 
 ### [🚀 See the app in action 🚀](https://yolo-fe-task.netlify.app/)
 
-![gif]()
+![gif](https://user-images.githubusercontent.com/34713212/166839636-491e601b-161f-45b5-94f2-1b452b861934.gif)
 
 ## Resources that I use for the project
 - https://www.apollographql.com/docs/react/development-testing/testing/
