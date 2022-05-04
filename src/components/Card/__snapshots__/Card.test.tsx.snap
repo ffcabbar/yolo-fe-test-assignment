@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component matches snapshot 1`] = `
+<div
+  className="wrapper"
+  data-testid="card"
+>
+  <div>
+    <div>
+      <input
+        className="input"
+        data-testid="search-box"
+        onChange={[Function]}
+        placeholder="BTC"
+        role="searchbox"
+        value=""
+      />
+    </div>
+  </div>
+  <div>
+    <button
+      className="button"
+      data-testid="button"
+      onClick={[Function]}
+    >
+      Add
+    </button>
+  </div>
+  <div>
+    <div>
+      Use of this service is subject to terms and conditions.
+    </div>
+  </div>
+</div>
+`;
